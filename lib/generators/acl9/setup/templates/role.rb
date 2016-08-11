@@ -1,3 +1,3 @@
-class <%= role_class_name %> < ActiveRecord::Base
+class <%= role_class_name %> < ApplicationRecord
   <%= role_helper %>
 end

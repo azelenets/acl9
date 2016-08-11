@@ -77,7 +77,7 @@ module Acl9
     rescue Errno::ENOENT
       create_file file_name do
         <<-RUBY.strip_heredoc
-        class #{class_name} < ActiveRecord::Base
+        class #{class_name} < ApplicationRecord
         #{string}
         end
         RUBY

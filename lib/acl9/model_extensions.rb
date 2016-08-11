@@ -19,7 +19,7 @@ module Acl9
       # @option options [String] :association_name (Acl9::config[:default_association_name])
       #                           Association name (e.g. ':roles')
       # @example
-      #   class User < ActiveRecord::Base
+      #   class User < ApplicationRecord
       #     acts_as_authorization_subject
       #   end
       #
@@ -59,7 +59,7 @@ module Acl9
       # @option options [String] :role_class_name (Acl9::config[:default_role_class_name])
       #                          Role class name (e.g. 'AccountRole')
       # @example
-      #   class Product < ActiveRecord::Base
+      #   class Product < ApplicationRecord
       #     acts_as_authorization_object
       #   end
       #
@@ -108,7 +108,7 @@ module Acl9
       #                           Join table name (e.g. 'accounts_account_roles')
       #
       # @example
-      #   class Role < ActiveRecord::Base
+      #   class Role < ApplicationRecord
       #     acts_as_authorization_role
       #   end
       #
